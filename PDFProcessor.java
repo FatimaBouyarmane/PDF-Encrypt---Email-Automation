@@ -17,7 +17,7 @@ import javax.mail.internet.*;
 
 public class PDFProcessor {
 
-    // CIN formats: X1111 or XX111
+    // CIN formats: X111111 or XX11111
     private static final String CIN_REGEX = "([A-Z][0-9]{6})|([A-Z]{2}[0-9]{5})";
 
     // ---------------- Extract CIN ----------------
