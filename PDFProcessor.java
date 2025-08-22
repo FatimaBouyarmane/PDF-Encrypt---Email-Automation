@@ -52,7 +52,7 @@ public class PDFProcessor {
         // Load the original PDF
         PDDocument document = PDDocument.load(file);
         
-        // Set up access permissions (optional - you can customize these)
+        // Set up access permissions
         AccessPermission accessPermission = new AccessPermission();
         accessPermission.setCanPrint(true);
         accessPermission.setCanModify(false);
@@ -238,7 +238,6 @@ public class PDFProcessor {
                                  "Simply open the PDF with any PDF reader and enter the password when prompted.\n\n" +
                                  "Best regards";
                 
-                // Try the secure method first, fallback to regular method
                 try {
                     sendEmailSecure(receiverEmail,
                             emailSubject,
